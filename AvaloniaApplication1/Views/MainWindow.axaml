@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaloniaApplication1.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication1.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaApplication1">
+
+    <StackPanel>
+        
+        <TextBlock Margin="0 5" FontSize="18" FontWeight="Bold">
+         Digite os seguintes dados: 
+        </TextBlock>
+        
+        <StackPanel Margin="20">
+            <ComboBox SelectedIndex="0" MaxDropDownHeight="100">
+                <ComboBoxItem>Turma 3000/A</ComboBoxItem>
+                <ComboBoxItem>Turma 3000/B</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+        <TextBlock>Digite seu nome:</TextBlock>
+        <TextBox> </TextBox>
+        
+        <TextBlock >Digite seu Sobrenome:</TextBlock>
+        <TextBox> </TextBox>
+        
+        <TextBlock>Digite seu cpf:</TextBlock>
+        <TextBox> </TextBox>
+        
+        <TextBlock>Digite sua idade:</TextBlock>
+        <TextBox> </TextBox>
+        
+        <TextBlock>Digite seu email:</TextBlock>
+        <TextBox> </TextBox>
+       
+        
+      <Button Click="Button_OnClick"> Enviar </Button >
+    </StackPanel>
+</Window>
+
